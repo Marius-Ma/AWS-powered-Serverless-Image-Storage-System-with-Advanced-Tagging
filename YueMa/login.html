@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="js/login.js" defer></script>
+  </head>
+  <body>
+    <div class="container-fluid vh-100">
+      <div class="row h-100">
+        <div
+          class="col-md-6 d-none d-md-flex bg-primary text-white justify-content-center align-items-center"
+        >
+          <div class="text-center">
+            <h1>Welcome to Image Upload Service</h1>
+            <p>
+              Click the button below to login and start uploading your images.
+            </p>
+          </div>
+        </div>
+        <div
+          class="col-md-6 bg-white d-flex justify-content-center align-items-center"
+        >
+          <div class="w-75">
+            <h2 class="mb-4">Login</h2>
+            <button id="loginButton" class="btn btn-primary btn-block">
+              Login with Cognito
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

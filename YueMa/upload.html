@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Upload</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="js/upload.js" defer></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="collapse navbar-collapse justify-content-end">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a id="logoutButton" class="nav-link" href="#" title="Logout">
+              Logout
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container-fluid vh-100">
+      <div class="row h-100">
+        <div
+          class="col-md-6 d-none d-md-flex bg-primary text-white justify-content-center align-items-center"
+        >
+          <div class="text-center">
+            <h1 id="welcomeMessage">Welcome, User</h1>
+            <p>
+              Awesome, we’ve created the perfect place for you to store your
+              images.
+            </p>
+          </div>
+        </div>
+        <div
+          class="col-md-6 bg-white d-flex justify-content-center align-items-center"
+        >
+          <div class="w-75">
+            <h2 class="mb-4">Upload your image</h2>
+            <form id="uploadForm">
+              <div class="form-group">
+                <label for="imageFile">Select Image</label>
+                <input
+                  type="file"
+                  class="form-control-file"
+                  id="imageFile"
+                  required
+                />
+                <input
+                  type="text"
+                  id="fileName"
+                  class="form-control"
+                  readonly
+                />
+                <div id="thumbnail" class="mt-3"></div>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">
+                Upload
+              </button>
+            </form>
+            <div id="result" class="mt-3"></div>
+            <button
+              id="manageTagsButton"
+              class="btn btn-secondary btn-block mt-3"
+            >
+              Manage Subscription and Tags
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
